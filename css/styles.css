@@ -17,6 +17,7 @@
     --color-dark: #1A2B45;
     --color-ltcyan: #31d2ff;
     --color-gold: #fff534;
+    --color-red: #FF0000;
 
 
     --font-main: 'EB Garamond', serif;
@@ -32,6 +33,7 @@
 body {
     font-family: var(--font-main);
     line-height: 1.6;
+    background-color: #ebfaff;
 }
 
 /* | Navigation | */
@@ -145,7 +147,7 @@ header{
 #btn a {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--color-white)
+    color: var(--color-white);
     font-family: var(--font-bold);
     font-weight: bold;
 }
@@ -174,4 +176,168 @@ header{
 #btn1:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* CIA TRIAD SECTION */
+
+.cia-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.cia-sub {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+}
+
+.cia-info h2 {
+    font-size: 30px;
+}
+
+.cia-desc {
+    color: #5f7591;
+    font-weight: bold;
+}
+
+
+
+/* | Card Section | */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.cia-card {
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+}
+
+.cia-card h3 {
+    font-size: 30px;
+}
+
+.cia-card1 {
+    border-top: 5px solid #0077ff;
+    border-radius: 1rem;
+}
+
+.cia-card2 {
+    border-top: 5px solid #09a813;
+    border-radius: 1rem;
+}
+
+.cia-card3 {
+    border-top: 5px solid #ff0000;
+    border-radius: 1rem;
+}
+
+.quote-text {
+    color: var(--color-blue);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.quote-text1 {
+    color: var(--color-green);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.quote-text2 {
+    color: var(--color-red);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.emoji-key {
+    width: 50px;
+    height: 50px;
+
+    background-color: #a2f3ff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+
+.emoji-check {
+    width: 50px;
+    height: 50px;
+
+    background-color: #75ff75;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+
+.emoji-signal {
+    width: 50px;
+    height: 50px;
+
+    background-color: #ff8080;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+
+.highlight-text {
+    margin-top: 2rem;
+    background-color: rgba(255, 112, 112, 0.291);
+}
+
+.conf-highlight {
+    color: #ff0000;
+}
+
+.conf-highlight1 {
+    color: #870000;
+}
+
+.integ-highlight {
+    color: #FF0000;    
+}
+
+.integ-highlight1 {
+    color: #870000;
+}
+
+.avail-highlight {
+    color: #FF0000;
+}
+
+.avail-highlight1 {
+    color: #870000;
+}
+
+/* | CIA CARD FOOTER SECTION |*/
+/* FINISH */
+
+.cia-card-footer {
+    border: 2px solid #4ce7ff;
 }
