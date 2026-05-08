@@ -26,6 +26,7 @@
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <section id="hero">
         <div class="hero-content">
             <p class="hero-sub-content">Computer &amp; Information Science - Seaway Tech</p>
@@ -38,8 +39,10 @@
         </div>
     </section>
 
+    <!-- CIA Triad Section -->
     <main>
-        <section class="cia-info">
+        <section class="cia-info" id="cia-info">
+            
             <p class="cia-sub">Core Framework</p>
             <h2>The CIA Triad</h2>
             <p class="cia-desc">Data is a variable asset. The primary goal of Cybersecurity is to maintain three critical properties - collectivley known as the <strong>CIA Triad</strong> - for all data, all the time.</p>
@@ -52,6 +55,7 @@
                     <p class="emoji-key">&#128272;</p>
                     <h3>Confidentiality</h3>
                     <p class="quote-text">"Data is not revealed"</p>
+                    
                     <p>Protection against unauthorized access. Only those 
                     with proper permission should ever be able to read or view the data.</p>
                     <p>Think of it as a locked diary — only the owner 
@@ -64,13 +68,16 @@
                 </div>
 
                 <div class="cia-card cia-card2">
+                    
                     <p class="emoji-check">&#x2705;</p>
                     <h3>Integrity</h3>
                     <p class="quote-text1">"Data is intact - not modified or corrupted"</p>
+                    
                     <p>Protection against unauthorized modification. Data must remain accurate 
                     and trustworthy from the moment it is created until it is accessed.</p>
                     <p>If someone changes your grade in the grade book without permission, 
                     that's an Integrity breach.</p>
+                    
                     <div class="highlight-text">
                         <p class="integ-highlight">REAL-WORLD BREACH</p>
                         <p class="integ-higlight1">The Stuxnet worm secretly altered code on Iranian centrifuge machines, causing them to spin too fast and physically break — a classic Integrity attack.</p>
@@ -78,6 +85,7 @@
                 </div>
 
                 <div class="cia-card cia-card3">
+                    
                     <p class="emoji-signal">&#128225;</p>
                     <h3>Availability</h3>
                     <p class="quote-text2">"Data is accessible to allowed users"</p>
@@ -92,11 +100,95 @@
                 </div>
 
                 <div class="cia-card-footer">
-                    <p>&#128161;</p>
-                    <p><strong>Security Formula:</strong> Protection = Prevention + (Detection + Response). Every cybersecurity technique fits into at least one of these three elements, and every element maps back to the CIA Triad.</p>
+                    <p class="emoji-lightbulb">&#128161;</p>
+                    <p class="triad-footer-text"><strong>Security Formula:</strong> <i>Protection = Prevention + (Detection + Response)</i>. Every cybersecurity technique fits into at least one of these three elements, and every element maps back to the CIA Triad.</p>
                 </div>
 
             </div>
+
+        </section>
+
+        <!-- Data States Section -->
+        <section class="data-states" id="dataStates">
+            
+            <section class="tsd-info">
+                <p class="tsd-sub">Protecting Data</p>
+                <h2>The Three States of Data</h2>
+                <p class="tsd-desc">To choose the right security tool, you need to know what state data is currently in. 
+                Data exists in one of three states at any given moment.</p>
+            </section>
+
+            <div class="card-grid">
+                <div class="tsd-card tsd-card1">
+                    <p class="tsd-emoji">&#128190;</p>
+                    <h3>Data at Rest</h3>
+                    <p>Information stored on hard drives, USB drives, DVDs, or memory — sitting still and not currently being moved or processed.</p>
+                    <p class="tsd-example"><i>Example: Saved files on your laptop's hard drive.</i></p>
+                </div>
+
+
+                <div class="tsd-card tsd-card2">
+                    <p class="tsd-emoji">&#128228;</p>
+                    <h3>Data in Transit</h3>
+                    <p>Data actively moving from one system to another — through a network, 
+                    the internet, or a local file share connection.</p>
+                    <p class="tsd-example"><i>Example: Sending an email or uploading a file to the cloud.</i></p>
+                </div>
+
+
+                <div class="tsd-card tsd-card3">
+                    <p class="tsd-emoji">&#9881;</p>
+                    <h3>Data in Use</h3>
+                    <p>Data currently being processed by an application, held in active 
+                    RAM, or being created/edited by a user right now.</p>
+                    <p class="tsd-example"><i>Example: A Word document you have open, or app data 
+                    loaded in memory.</i></p>
+                </div>
+
+                <div class="tsd-footer">
+                    <p class="tsd-footer-text">Different tools protect different states: <b>Encryption</b> for data at rest, <b>secure protocols (HTTPS/TLS)</b> for data in transit, and <b>access controls &amp; authentication</b> for data in use.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="authentication" id="auth">
+            
+            <section class="auth-info">
+                <p class="auth-sub">The AAA Security Model</p>
+                <h2>Authentication, Access Control, &amp; Accounting</h2>
+                <p class="auth-desc">The AAA model describes the three tools used in practice to 
+                achieve the CIA Triad.</p>
+            </section>
+
+            <div class="card-grid">
+                <div class="auth-card auth-card1">
+                    <h2>A</h2>
+                    <h3>Authentication</h3>
+                    <p>Prove who you are. Authentication is the establishment of trust between two parties Without trust, information cannot safely be shared or accessed.</p>
+                    
+                </div>
+
+
+                <div class="auth-card auth-card2">
+                    <h2>A</h2>
+                    <h3>Access Control</h3>
+                    <p>What are you allowed to see or reach? Also called authorization or permissions. Not every authenticated user should access everything.</p>
+                    
+                </div>
+
+
+                <div class="auth-card auth-card3">
+                    <h2>A</h2>
+                    <h3>Accounting</h3>
+                    <p>Keep track of what happened. Also called auditing. Logs and records let us review activity, detect anomalies, and respond to incidents.</p></p>
+                </div>
+
+                <div class="auth-footer">
+                    <p class="auth-emoji-key"> &#x1F511;</p>
+                    <p class="auth-footer-text"><strong>The Three Ways to Authenticate&colon;</strong> Something you know (password or PIN), Something you have (smart card, hardware token, code sent to your phone), Something you are (fingerprint, retina scan, voice)</p>
+                </div>
 
         </section>
     </main>

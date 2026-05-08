@@ -194,12 +194,13 @@ header{
 }
 
 .cia-info h2 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .cia-desc {
     color: #5f7591;
     font-weight: bold;
+    font-size: 17px;
 }
 
 
@@ -336,8 +337,184 @@ header{
 }
 
 /* | CIA CARD FOOTER SECTION |*/
-/* FINISH */
 
 .cia-card-footer {
+    display: flex;
+    gap: 1rem;
     border: 2px solid #4ce7ff;
+    border-radius: 5px;
+    background-color: rgba(190, 238, 253, 0.65);
+}
+
+.emoji-lightbulb {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.triad-footer-text {
+    color: var(--color-dark);
+    padding: 1rem;
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Three Data States Section */
+
+.tsd-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.tsd-sub {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+}
+
+.tsd-info h2 {
+    font-size: 50px;
+}
+
+.tsd-desc {
+    color: #5f7591;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.tsd-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+    gap: 0.50rem;
+}
+
+.tsd-card h3 {
+    font-size: 20px;
+    color: #003d73;
+}
+
+.tsd-example {
+    color: #5f7591;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.tsd-emoji {
+    font-size: 2rem;
+}
+
+.tsd-footer {
+    display: flex;
+    gap: 1rem;
+    border: 2px solid #4ce7ff;
+    border-radius: 5px;
+    background-color: rgba(190, 238, 253, 0.65);
+}
+
+.tsd-footer-text {
+    color: var(--color-dark);
+    padding: 1rem;
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Authentication Section */
+
+.authentication {
+    background-color: #042441;
+}
+
+.auth-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.auth-sub {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.auth-info h2 {
+    font-size: 50px;
+    color: var(--color-white);
+}
+
+.auth-desc {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.auth-card {
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: #0d304a;
+    border: 0.7px solid #4ce7ff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+}
+
+.auth-card h2 {
+    font-size: 50px;
+    color: #00a0cd;
+}
+
+.auth-card h3 {
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.auth-card p {
+    color: var(--color-ltcyan);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* | AUTHENTICATION FOOTER SECTION |*/
+
+.auth-footer {
+    display: flex;
+    gap: 1rem;
+    border: 0.7px solid #4ce7ff;
+    border-radius: 5px;
+    background-color: #0d304a;
+}
+
+.auth-footer-text strong {
+    color: var(--color-white);
+}
+
+.auth-footer-text {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-emoji-key {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
