@@ -432,6 +432,7 @@ header{
 
 .authentication {
     background-color: #042441;
+    padding: 2rem;
 }
 
 .auth-info {
@@ -517,4 +518,83 @@ header{
 .auth-emoji-key {
     font-size: 2rem;
     margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* Password Section */
+
+.pass-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.pass-sub {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+}
+
+.pass-info h2 {
+    font-size: 50px;
+}
+
+.pass-desc {
+    color: #5f7591;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pass-card {
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+    gap: 0.50rem;
+    margin-bottom: 5rem;
+}
+
+.pass-card h3 {
+    font-size: 20px;
+    color: #003d73;
+}
+
+.pass-method-desc {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.pass-example {
+    color: #5f7591;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.pass-emoji {
+    font-size: 2rem;
+}
+
+/* | Estimated Password Crack Time Table | */
+
+.pass-info-time {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+
+.pass-crack-time {
+    font-size: 20px;
+}
+
+.pass-desc p{
+    color: #5f7591;
+    font-weight: bold;
+    font-size: 20px;
 }
