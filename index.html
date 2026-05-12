@@ -240,7 +240,181 @@
                 <h2>How Long to Brute Force Your Password?</h2>
                 <p class="pass-desc">Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to build a solid defense.</p>
             </section>
-            </seciton>
+
+            <table class="pass-table-time">
+                <caption class="table-caption">Estimated Brute Force Crack Time by Password Length &amp; Character Set</caption>
+                <tr class="table-head">
+                    <th># Chars</th>
+                    <th>NUMBERS ONLY (0-9)</th>
+                    <th>LOWER CASE ONLY (a-z)</th>
+                    <th>UPPER &amp; LOWER (a-z, A-Z)</th>
+                    <th>NUMBERS &plus; MIXED CASE (a-z, A-Z, 0-9)</th>
+                    <th>NUMBERS &plus; MIXED &plus; SYMBOLS</th>
+                </tr>
+
+                <tr>
+                    <th>4</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <th>6</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="less-1hour">1 Sec</td>
+                    <td class="less-1hour">5 Sec</td>
+                </tr>
+
+                <tr>
+                    <th>7</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="instantly">Instantly</td>
+                    <td class="less-1hour">25 Sec</td>
+                    <td class="less-1hour">1 Min</td>
+                    <td class="less-1hour">6 Min</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <th>8</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="less-1hour">5 Sec</td>
+                    <td class="less-1hour">22 Min</td>
+                    <td class="less-1hour">1 Hour</td>
+                    <td class="less-1month">8 Hours</td>
+                </tr>
+
+                <tr>
+                    <th>9</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="less-1hour">2 Min</td>
+                    <td class="less-1month">19 Hours</td>
+                    <td class="less-1month">3 Days</td>
+                    <td class="less-1month">3 Weeks</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <th>10</th>
+                    <td class="instantly">Instantly</td>
+                    <td class="less-1hour">58 Min</td>
+                    <td class="less-1month">1 Month</td>
+                    <td class="less-1year">7 Months</td>
+                    <td class="less-1year">5 Years</td>
+                </tr>
+
+                <tr>
+                    <th>11</th>
+                    <td class="less-1hour">2 Sec</td>
+                    <td class="less-1month">1 Day</td>
+                    <td class="less-1year">5 Years</td>
+                    <td class="greater-11year">41 Years</td>
+                    <td class="greater-11year">400 Years</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <th>12</th>
+                    <td class="less-1hour">25 Sec</td>
+                    <td class="less-1month">3 Weeks</td>
+                    <td class="greater-11year">300 Years</td>
+                    <td class="greater-11year">2,000 Years</td>
+                    <td class="greater-11year">34,000 Years</td>
+                </tr>
+
+                <tr>
+                    <th>15</th>
+                    <td class="less-1month">6 Hours</td>
+                    <td class="greater-11year">1,000 Years</td>
+                    <td class="greater-11year">43 Million Years</td>
+                    <td class="greater-11year">600 Million Years</td>
+                    <td class="greater-11year">15 Billion Years</td>
+                </tr>
+
+                <tr class="odd-row">
+                    <th>18&plus;</th>
+                    <td class="less-1year">9 Months</td>
+                    <td class="greater-11year">23 Million Years</td>
+                    <td class="greater-11year">6 Trillion Years</td>
+                    <td class="greater-11year">100 Trillion Years</td>
+                    <td class="greater-11year">7 Quadrillion Years</td>
+                </tr>
+
+            </table>  
+            
+            <div class="pass-table-footer">
+                <p class="pass-table-emoji-warn">&#9888;</p>
+                <p class="pass-table-footer-text"> <strong>What Hackers Already Know: </strong> Capital letters are usually at the start, numbers are usually 1 or 2 at the start or end, women often choose personal names, and men often choose hobbies. Don't be predictable - length and variety are your best defense!</p>
+            </div>
+        </seciton>
+
+
+        <section class="hashing" id="hash">
+            <section class="hash-info">
+                <p class="hash-sub">PASSWORD STORAGE</p>
+                <h2>Password Hashing &amp; Salting</h2>
+                <p class="hash-desc">Passwords should <strong>never</strong> be stored as plain text. The most common safe storage method is <i>hashing</i> a one-way mathematical transformation.</p>
+            </section>
+
+            <section class="hash-steps">
+                <div>
+                    <div class="hash-step">
+                        <p>Pa&dollar;&dollar;word123</p>
+                    </div>
+
+                    <div class="hash-step-desc">
+                        <p>PLAIN TEXT PASSWORD</p>
+                    </div>
+                </div>
+
+                <div>
+                    &rightarrow;
+                </div>
+
+                <div>
+                    <div class="hash-step">
+                        <p>SHA-256 Algorithm</p>
+                    </div>
+
+                    <div class="hash-step-desc">
+                        <p>HASHING FUNCTION</p>
+                    </div>
+                </div>
+
+                <div>
+                    &rightarrow;
+                </div>
+
+                <div>
+                    <div class="hash-step">
+                        <p>e52cac6741</p>
+                        <p>9a9a5f4dcc</p>
+                        <p>3b5aa765d6...</p>
+                    </div>
+
+                    <div class="hash-step-desc">
+                        <p>STORED HASH</p>
+                    </div>
+                </div>
+
+                <div>
+                    &rightarrow;
+                </div>
+
+                <div>
+                    <div class="hash-step">
+                        <p>Hashes Match &checkmark;</p>
+                        <p>ACCESS GRANTED</p>
+                    </div>
+
+                    <div class="hash-step-desc">
+                        <p>LOGIN COMPARISON</p>
+                    </div>
+                </div>
+
+            </section>
         </section>
     </main>
 
