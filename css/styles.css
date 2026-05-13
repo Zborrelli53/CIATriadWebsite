@@ -15,6 +15,7 @@
     --color-violet: #6a14d3;
     --color-white: #FFFFFF;
     --color-dark: #1A2B45;
+    --color-cyan: #4ce7ff;
     --color-ltcyan: #31d2ff;
     --color-gold: #fff534;
     --color-red: #FF0000;
@@ -23,6 +24,7 @@
     --font-main: 'EB Garamond', serif;
     --font-reg: 'Playfair Display', Arial, sans-serif;
     --font-bold: 'Merriweather', Arial, sans-serif;
+    --font-basic: 'Segoe UI', Tahoma, Verdana, sans-serif;
 
 
     --spacing-sm: 0.75rem;
@@ -67,6 +69,7 @@ header{
     list-style: none;
     display: flex;
     gap: 2rem;
+    justify-content: space-evenly;
 }
 
 .nav-links a {
@@ -355,7 +358,7 @@ header{
     color: var(--color-dark);
     padding: 1rem;
     color: #494949;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-basic);
 }
 
 /* The Three Data States Section */
@@ -405,7 +408,7 @@ header{
 
 .tsd-example {
     color: #5f7591;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-basic);
     font-size: 14px;
 }
 
@@ -419,6 +422,8 @@ header{
     border: 2px solid #4ce7ff;
     border-radius: 5px;
     background-color: rgba(190, 238, 253, 0.65);
+    font-family: var(--font-basic);
+    margin-bottom: 5rem;
 }
 
 .tsd-footer-text {
@@ -512,7 +517,7 @@ header{
     color: var(--color-ltcyan);
     font-weight: bold;
     padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-basic);
 }
 
 .auth-emoji-key {
@@ -773,6 +778,8 @@ header{
     font-size: 20px;
 }
 
+/* | Hash Flex Section | */
+
 .hash-steps {
     display: flex;
     background-color: #0d304a;
@@ -785,3 +792,133 @@ header{
 .hash-step-desc {
     color: #4ce7ff;
 }
+
+.hash-steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    align-items: center;
+    min-width: 200px;
+}
+
+.hash-step {
+    border: 2px solid #4ce7ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.hash-step p {
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.hash-password {
+    text-align: center;
+}
+
+.hash-algorithm {
+    background-color: #4ce7ff;
+}
+
+.hash-algorithm p {
+    color: black;
+    font-weight: bold;
+}
+
+.stored-hash {
+    width: 15rem;
+}
+
+.stored-hash p{
+    text-align: center;
+}
+
+.login-hash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hash-step-arrow {
+    color: var(--color-cyan);
+    font-size: 3rem;
+    width: 50px;
+}
+
+.hash-step-desc {
+    text-align: center;
+    font-family: var(--font-basic);
+}
+
+/* | Hashing & Salting Card Section | */
+.hash-card {
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+    gap: 0.50rem;
+    margin-bottom: 5rem;
+}
+
+.hash-card h3 {
+    font-size: 20px;
+    color: #003d73;
+}
+
+.hash-method-desc {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.hash-emoji {
+    font-size: 2rem;
+}
+
+/* | Hash Footer Section | */
+
+.hash-footer {
+    display: flex;
+    gap: 1rem;
+    border: 2px solid #4ce7ff;
+    border-radius: 5px;
+    background-color: rgba(190, 238, 253, 0.65);
+    width: 90%;
+    margin-left: 3.7rem;
+    margin-top: 1rem;
+}
+
+
+
+.hash-footer-text {
+    color: var(--color-dark);
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hash-footer-emoji {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.linux-storage-path {
+    color: #4c9dff;
+    background-color: #90f0ff40;
+    font-weight: normal;
+}
+
+.linux-storage-path-footer {
+    color: #4c9dff;
+    font-family: var(--font-basic);
+    background-color: #90f0ff40;
+    font-weight: normal;
+}
+
+/* Authentication Methods Section */
+/* FINISH - COPY CARD STYLES FROM ABOVE AND MODIFY */

@@ -214,7 +214,7 @@
                     <p class="pass-emoji">&#128214;</p>
                     <h3>Dictionary Attack</h3>
                     <p class="bold-pass-method-num">METHOD #2</p>
-                    <p class="pass-method-desc">Uses a large database of common words, names, and character substitutions (like <span style="color: #1dceff; background-color: #009ac428;">p@ssw0rd</span>) to rapidly guess passwords. Much faster than pure brute force.</p>
+                    <p class="pass-method-desc">Uses a large database of common words, names, and character substitutions (like <span style="color: #4c9dff; background-color: #90f0ff40;">p@ssw0rd</span>) to rapidly guess passwords. Much faster than pure brute force.</p>
                 </div>
 
 
@@ -240,6 +240,8 @@
                 <h2>How Long to Brute Force Your Password?</h2>
                 <p class="pass-desc">Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to build a solid defense.</p>
             </section>
+
+            <!-- Password Crack Time Table -->
 
             <table class="pass-table-time">
                 <caption class="table-caption">Estimated Brute Force Crack Time by Password Length &amp; Character Set</caption>
@@ -360,7 +362,7 @@
 
             <section class="hash-steps">
                 <div>
-                    <div class="hash-step">
+                    <div class="hash-step hash-password">
                         <p>Pa&dollar;&dollar;word123</p>
                     </div>
 
@@ -369,12 +371,12 @@
                     </div>
                 </div>
 
-                <div>
-                    &rightarrow;
+                <div class="hash-step-arrow">
+                    <p>&rightarrow;</p>
                 </div>
 
                 <div>
-                    <div class="hash-step">
+                    <div class="hash-step hash-algorithm">
                         <p>SHA-256 Algorithm</p>
                     </div>
 
@@ -383,12 +385,12 @@
                     </div>
                 </div>
 
-                <div>
-                    &rightarrow;
+                <div class="hash-step-arrow">
+                    <p>&rightarrow;</p>
                 </div>
 
                 <div>
-                    <div class="hash-step">
+                    <div class="hash-step stored-hash">
                         <p>e52cac6741</p>
                         <p>9a9a5f4dcc</p>
                         <p>3b5aa765d6...</p>
@@ -399,12 +401,12 @@
                     </div>
                 </div>
 
-                <div>
-                    &rightarrow;
+                <div class="hash-step-arrow">
+                    <p>&rightarrow;</p>
                 </div>
 
                 <div>
-                    <div class="hash-step">
+                    <div class="hash-step login-hash">
                         <p>Hashes Match &checkmark;</p>
                         <p>ACCESS GRANTED</p>
                     </div>
@@ -415,6 +417,109 @@
                 </div>
 
             </section>
+
+            <div class="card-grid">
+                <div class="hash-card hash-card1">
+                    <p class="hash-emoji">&#x1F522;</p>
+                    <h3>What is Hashing?</h3>
+                    <p class="hash-method">ONE-WAY CONVERSION</p>
+                    <p class="hash-method-desc">A mathematical conversion converts a password into a fixed-length string called a <i>hash</i>. It is one-way - the original password cannot be recovered from the hash alone. Common Algorithms: MD5, SHA-256, SHA-512.</p>
+                </div>
+
+
+                <div class="hash-card hash-card2">
+                    <p class="hash-emoji">&#x1F308;</p>
+                    <h3>Rainbow Tables</h3>
+                    <p class="hash-method">ATTACK METHOD</p>
+                    <p class="hash-method-desc">A massive precomputed file of hash values for every possible password. Attackers look up a stolen hash to instantly find the matching password - no cracking required</p>
+                </div>
+
+
+                <div class="hash-card hash-card3">
+                    <p class="hash-emoji">&#x1F9C2;</p>
+                    <h3>Salting</h3>
+                    <p class="hash-method">DEFENSE METHOD</p>
+                    <p class="hash-method-desc">A unique random string (a <i>salt</i>) is added to each password before hashing. Even identical passwords produce different hashes, completley defeating rainbow table lookups.</p>
+                </div>
+
+                <div class="hash-card hash-card4">
+                    <p class="hash-emoji">&#x1F4BB;</p>
+                    <h3>Pass-The-Hash</h3>
+                    <p class="hash-method">ADVANCED ATTACK</p>
+                    <p class="hash-method-desc">The attacker steals the hash directly from storage (Window SAM Hive or Linux <b class="linux-storage-path">/etc/shadow)</b> and uses it to authenticate - without ever knowing the original password.</p>
+                </div>
+
+            </div>
+
+            <div class="hash-footer">
+                <p class="hash-footer-emoji">&#128039;</p>
+                <p class="hash-footer-text"><strong>Where are Passwords Stored?</strong> On <b>Windows:</b> in the SAM registry Hive. On <b>Linux:</b> in <b class="linux-storage-path-footer">/etc/shadow</b>(root access only). The older <b class="linux-storage-path-footer">/etc/shadow</b> file is readable and not safe for passwords.</p>
+            </div>
+        </section>
+        
+        <section class="authMethod" id="authMethod">
+            <div class="card-grid">
+                    <div class="authMethod-card authMethod-card1">
+                        <p class="authMethod-emoji">&#128179;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+
+                    <div class="authMethod-card authMethod-card2">
+                        <p class="authMethod-emoji">&#x1F4AC;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+
+                    <div class="authMethod-card authMethod-card3">
+                        <p class="authMethod-emoji">&#128070;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+                    <div class="authMethod-card authMethod-card4">
+                        <p class="authMethod-emoji">&#x1F511;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+                    <div class="authMethod-card authMethod-card5">
+                        <p class="authMethod-emoji">&#128241;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+
+                    <div class="authMethod-card authMethod-card6">
+                        <p class="authMethod-emoji">&#128737;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+
+                    <div class="authMethod-card authMethod-card7">
+                        <p class="authMethod-emoji">&#128279;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+                    <div class="authMethod-card authMethod-card8">
+                        <p class="authMethod-emoji">&#128221;</p>
+                        <h3></h3>
+                        <p class="authMethod-sub"></p>
+                        <p class="authMethod-card-desc"></p>
+                    </div>
+
+            </div>
         </section>
     </main>
 
