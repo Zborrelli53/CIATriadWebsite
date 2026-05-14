@@ -26,7 +26,9 @@
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!--============================
+                HERO SECTION
+    =============================-->
     <section id="hero">
         <div class="hero-content">
             <p class="hero-sub-content">Computer &amp; Information Science - Seaway Tech</p>
@@ -39,7 +41,9 @@
         </div>
     </section>
 
-    <!-- CIA Triad Section -->
+    <!--=====================================
+            CIA Triad Section
+    ======================================-->
     <main>
         <section class="cia-info" id="cia-info">
             
@@ -108,7 +112,9 @@
 
         </section>
 
-        <!-- Data States Section -->
+        <!--=================================
+                Data States Section
+        =====================================-->
         <section class="data-states" id="dataStates">
             
             <section class="tsd-info">
@@ -152,7 +158,9 @@
             </div>
         </section>
 
-        <!-- Authentication Section -->
+        <!--===================================
+                Authentication Section
+        ====================================-->
         <section class="authentication" id="auth">
             
             <section class="auth-info">
@@ -192,7 +200,9 @@
 
         </section>
 
-        <!-- Passwords Section -->
+        <!--==========================
+                Passwords Section
+        ===========================-->
         <section class="passwords" id="passwords">
 
             <section class="pass-info">
@@ -241,7 +251,9 @@
                 <p class="pass-desc">Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to build a solid defense.</p>
             </section>
 
-            <!-- Password Crack Time Table -->
+            <!--==================================
+                    Password Crack Time Table 
+            ===================================-->
 
             <table class="pass-table-time">
                 <caption class="table-caption">Estimated Brute Force Crack Time by Password Length &amp; Character Set</caption>
@@ -457,74 +469,176 @@
             </div>
         </section>
         
-        <section class="authMethod" id="authMethod">
+        <!-- ==============================
+                Auth Method Section 
+        ================================-->
+        <section class="authMethod" id="authMethods">
+
+            <section class="authMethod-info">
+                <p class="authMethod-subs">BEYOND PASSWORDS</p>
+                <h2>Methods of Authentication</h2>
+                <p class="authMethod-desc">Modern security goes far beyond passwords. Here are the key authentication methods used in real-world systems - and how combining them creates much stronger protection.</p>
+            </section>
+
             <div class="card-grid">
                     <div class="authMethod-card authMethod-card1">
                         <p class="authMethod-emoji">&#128179;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Smart Cards</h3>
+                        <p class="authMethod-sub">SOMETHING YOU HAVE</p>
+                        <p class="authMethod-card-desc">Cards with an embedded chip automatically recognized by an authentication device. Proximity readers can detect them in a pocket or purse without physical contact</p>
                     </div>
 
 
                     <div class="authMethod-card authMethod-card2">
                         <p class="authMethod-emoji">&#x1F4AC;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Digital Certificates</h3>
+                        <p class="authMethod-sub">SOMETHING YOU HAVE</p>
+                        <p class="authMethod-card-desc">Servers use certificates to authenticate with browsers (the &#128274; padlock in your address bar). Issued by trusted third-party Certificate Authorities (CAs).</p>
                     </div>
 
 
                     <div class="authMethod-card authMethod-card3">
                         <p class="authMethod-emoji">&#128070;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Biometrics</h3>
+                        <p class="authMethod-sub">SOMETHING YOU ARE</p>
+                        <p class="authMethod-card-desc">Uses measurable physical characteristics: fingerprint, retina scan, voice, or even typing speed. Disney World uses finger biometrics for multi-day pass verification.</p>
                     </div>
 
                     <div class="authMethod-card authMethod-card4">
                         <p class="authMethod-emoji">&#x1F511;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Hardware Tokens (OTP)</h3>
+                        <p class="authMethod-sub">SOMETHING YOU HAVE</p>
+                        <p class="authMethod-card-desc">A physical device generates a One Time Password (OTP) every 60 seconds. Since each OTP is used exactly once, intercepting it is useless to an attacker.</p>
                     </div>
 
                     <div class="authMethod-card authMethod-card5">
                         <p class="authMethod-emoji">&#128241;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Two-Factor Auth (2FA)</h3>
+                        <p class="authMethod-sub">Know &plus; Have</p>
+                        <p class="authMethod-card-desc">Comines two factors - such as a password <i>plus</i> a PIN sent to your phone (like Google 2-Step Verification). One stolen factor alone is useless.</p>
                     </div>
 
 
                     <div class="authMethod-card authMethod-card6">
                         <p class="authMethod-emoji">&#128737;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Multi-Factor Auth (MFA)</h3>
+                        <p class="authMethod-sub">TWO OR MORE FACTORS</p>
+                        <p class="authMethod-card-desc">Uses two or more different authentication factors. The gold standard for account security - combining know, have, and/or are, dramatically reduces breach risk.</p>
                     </div>
 
 
                     <div class="authMethod-card authMethod-card7">
                         <p class="authMethod-emoji">&#128279;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Single-Sign On (SSO)</h3>
+                        <p class="authMethod-sub">ONE LOGIN, MANY RESOURCES</p>
+                        <p class="authMethod-card-desc">One authentication grants access to many servers or services. Used widely in schools and businesses to reduce password fatigue while maintaining security.</p>
                     </div>
 
                     <div class="authMethod-card authMethod-card8">
                         <p class="authMethod-emoji">&#128221;</p>
-                        <h3></h3>
-                        <p class="authMethod-sub"></p>
-                        <p class="authMethod-card-desc"></p>
+                        <h3>Passphrases</h3>
+                        <p class="authMethod-sub">SOMETHING YOU KNOW</p>
+                        <p class="authMethod-card-desc">A string of multiple words offers more security than a complex password <i>and</i> is easier to remember. Example: <i>"The 3 little pigs say do not forget the bacon!"</i></p>
                     </div>
 
+            </div>
+
+
+            <div class="stp-pass">
+                <h3>&#x1F6D1; Top 3 Ways to Stop Password Attacks</h3>
+                <div class="stp-methods">
+                    <div class="stp-method1">
+                        <p class="stp-method-num">#1 - Use Strong Passwords</p>
+
+                        <p class="stp-method-desc">Long passwords with mixed characters won't be in a dictionary and take too long to crack. 12+ characters, all character types.</p>
+                    </div>
+
+                    <div class="stp-method2">
+                        <p class="stp-method-num">#2 - Enable Account Lockout</p>
+
+                        <p class="stp-method-desc">Lock accounts after 3-5 failed attempts. This stops all automated brute force, dictionary, and spraying attacks cold.</p>
+                    </div>
+
+                    <div class="stp-method3">
+                        <p class="stp-method-num">#3 - Enable MFA/2FA</p>
+
+                        <p class="stp-method-desc">Even if a password is stolen, an attacker cannot log in without your second factor. Enable it everywhere you can. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authMethod-footer">
+                <p class="authMethod-footer-emoji">&#128279;</p>
+                <p class="authMethod-footer-text"><strong>Useful Resources:</strong> Check if your resources have been exposed at <a href="https://haveibeenpwned.com/" target="_blank">HaveIBeenPwned.com</a> &dot; Learn more about the NIST framework at <a href="https://www.nist.gov/cyberframework" target="_blank">nist.gov/cyberframework</a></p>
             </div>
         </section>
     </main>
 
     <footer>
-        
+        <section class="contact" id="contact">
+
+            <section class="contact-info">
+                <p class="contact-sub">Get in Touch</p>
+                <h2>Contact Us</h2>
+                <p class="contact-desc">Have a question about cybersecurity concepts covered on this page? Use the form below to send us a message and we'll be happy to help!</p>
+            </section>
+
+            <form class="contact-form" action="mailto:cte-zander.borrelli@sllboces.org" method="POST">
+                <!-- FIX LAYOUT OF FIRST AND LAST NAME OF FORM -->
+                <div class="names">
+                        <div>
+                            <label for="nameFirst" class="form-piece-name">First Name</label>
+                        
+                        
+                        <div>
+                            <input type="text" name="nameFirst" id="nameFirst" placeholder="Jane" class="form-piece-box form-piece-box2" required>
+                        </div>
+
+                        <div>
+                            <label for="nameLast" class="form-piece-name">Last Name</label>
+                        </div>
+
+                        <div>
+                            <input type="text" name="nameLast" id="nameLast" placeholder="Doe" class="form-piece-box form-piece-box2" required>
+                        </div>
+                </div>   
+                
+                <div class="email">
+                    <div>
+                        <label for="userEmail" class="form-piece-name">Email Address</label>
+                    </div>
+                    <div>
+                        <input type="userEmail" name="userEmail" id="userEmail" placeholder="janedoe@gmail.com" class="form-piece-box form-piece-box2" required>
+                    </div>
+
+                </div>
+
+                <div class="topic">
+                    <div>
+                        <label for="topic" class="form-piece-name">Select a Topic</label>
+                    </div>
+
+                    <div>
+                        <select name="topic" id="topic" class="form-piece-box" required>
+                            <option value="False">- Select a Topic -</option>
+                            <option value="placeholder">Zander's Magnificent Placeholder Text (Patent Pending)</option>
+                            <option value="placeholder2">Zander's Magnificent Placeholder Text MKII (Patent also Pending)</option>
+                            <option value="placeholder2">Zander's Magnificent Placeholder Text MKIII (Patent also Pending)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="question" class="form-piece-name">
+                    <div>   
+                        <label for="question" class="form-piece-name" required>Your Question or Comment</label>
+                    </div>
+
+                    <div>
+                        <textarea name="bio" id="bio" rows="7" cols="70" placeholder="Type your question here..." class="form-piece-box form-piece-box2"required></textarea><br>
+                    </div>
+                </div>
+            </form>
+        </section>
     </footer>
 </body>
 </html>

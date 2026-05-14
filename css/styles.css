@@ -894,7 +894,6 @@ header{
 }
 
 
-
 .hash-footer-text {
     color: var(--color-dark);
     padding: 1rem;
@@ -921,4 +920,187 @@ header{
 }
 
 /* Authentication Methods Section */
-/* FINISH - COPY CARD STYLES FROM ABOVE AND MODIFY */
+
+.authMethod-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.authMethod-subs {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.authMethod-info h2 {
+    font-size: 50px;
+}
+
+.authMethod-desc {
+    color: #5f7591;
+    font-size: 20px;
+}
+
+.authMethod-card {
+    width: 20rem;
+    flex: 1 1 220px;
+    background-color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.50);
+    gap: 0.50rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.authMethod-card h3 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.authMethod-sub {
+    color: #5e5e5e;
+}
+
+.authMethod-card-desc {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.authMethod-emoji {
+    font-size: 2rem;
+}
+
+/* | Top 3 Ways to Stop Password Attacks Section | */ 
+
+.stp-pass {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #042441;
+    padding: 2rem;
+}
+
+.stp-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    gap: .50rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.stp-pass h3{
+    color: var(--color-ltcyan);
+    margin-bottom: 2rem;
+    font-size: 22px;
+}
+
+.stp-method-num {
+    color: var(--color-ltcyan);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stp-method-desc {
+    color: #4cedff;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* | Auth Method Footer Section | */
+
+.authMethod-footer {
+    display: flex;
+    gap: 1rem;
+    border: 2px solid #4ce7ff;
+    border-radius: 5px;
+    background-color: rgba(190, 238, 253, 0.65);
+    width: 90%;
+    margin-left: 3.7rem;
+    margin-top: 1rem;
+}
+
+
+.authMethod-footer-text {
+    color: var(--color-dark);
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.authMethod-footer-emoji {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.authMethod-footer-text a{
+    color: #4cb7ff;
+    font-weight: bold;
+}
+
+/* CONTACT FORM */
+
+.contact-info {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-left: 100px;
+    text-align: left;
+    z-index: 1;
+}
+
+.contact-sub {
+    color: var(--color-ltcyan);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.contact-info h2 {
+    font-size: 50px;
+    color: var(--color-white);
+}
+
+.contact-desc {
+    color: var(--color-cyan);
+    font-size: 20px;
+}
+
+.contact {
+    background-color: #0d304a;
+    padding: 3rem;
+}
+
+.contact-form {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact-form {
+    border: 1px solid var(--color-cyan);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.form-piece-name {
+    color: var(--color-cyan);
+}
+
+.form-piece-box {
+    background-color: #38537970;
+    border: 1px solid var(--color-cyan);
+    border-radius: 5px;
+    padding: 0.7rem;
+    color: #5fbdf7;
+    font-weight: bold;
+}
+
+.form-piece-box {
+    color: #82b6ff;
+    font-weight: bold;
+}
