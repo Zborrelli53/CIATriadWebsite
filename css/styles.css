@@ -1045,10 +1045,15 @@ header{
 
 /* CONTACT FORM */
 
+.contact {
+    background-color: #071e39;
+    padding: 5rem 2rem 4rem;
+}
+
 .contact-info {
     max-width: 700px;
     margin-top: 2rem;
-    margin-left: 100px;
+    margin-left: 300px;
     text-align: left;
     z-index: 1;
 }
@@ -1056,7 +1061,7 @@ header{
 .contact-sub {
     color: var(--color-ltcyan);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .contact-info h2 {
@@ -1067,40 +1072,84 @@ header{
 .contact-desc {
     color: var(--color-cyan);
     font-size: 20px;
-}
-
-.contact {
-    background-color: #0d304a;
-    padding: 3rem;
+    margin-bottom: 4rem;
 }
 
 .contact-form {
-    margin-top: 10rem;
+    max-width: 820px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    padding: 2.5rem;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+}
+
+.form-row {
+    display: grid;
+    gap: 1rem;
+}
+
+.names {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    gap: 0.65rem;
 }
 
-.contact-form {
-    border: 1px solid var(--color-cyan);
-    border-radius: 10px;
-    padding: 2rem;
+.full-width {
+    grid-column: 1 / -1;
 }
 
 .form-piece-name {
-    color: var(--color-cyan);
+    color: #92d3ff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
 }
 
 .form-piece-box {
-    background-color: #38537970;
-    border: 1px solid var(--color-cyan);
-    border-radius: 5px;
-    padding: 0.7rem;
-    color: #5fbdf7;
-    font-weight: bold;
+    width: 100%;
+    min-height: 3.2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    padding: 1rem 1.1rem;
+    color: var(--color-white);
+    font-family: var(--font-basic);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.form-piece-box {
-    color: #82b6ff;
-    font-weight: bold;
+textarea.form-piece-box {
+    min-height: 11rem;
+    resize: vertical;
+    padding-top: 1rem;
 }
+
+.form-submit {
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #31d2ff 0%, #4ce7ff 100%);
+    color: #042441;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-self: start;
+}
+
+.form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 36px rgba(0, 0, 0, 0.35);
+}
+

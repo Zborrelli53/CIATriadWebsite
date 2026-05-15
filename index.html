@@ -577,66 +577,53 @@
     <footer>
         <section class="contact" id="contact">
 
-            <section class="contact-info">
+            <div class="contact-info">
                 <p class="contact-sub">Get in Touch</p>
                 <h2>Contact Us</h2>
                 <p class="contact-desc">Have a question about cybersecurity concepts covered on this page? Use the form below to send us a message and we'll be happy to help!</p>
-            </section>
+            </div>
 
-            <form class="contact-form" action="mailto:cte-zander.borrelli@sllboces.org" method="POST">
-                <!-- FIX LAYOUT OF FIRST AND LAST NAME OF FORM -->
-                <div class="names">
-                        <div>
-                            <label for="nameFirst" class="form-piece-name">First Name</label>
-                        
-                        
-                        <div>
-                            <input type="text" name="nameFirst" id="nameFirst" placeholder="Jane" class="form-piece-box form-piece-box2" required>
-                        </div>
-
-                        <div>
-                            <label for="nameLast" class="form-piece-name">Last Name</label>
-                        </div>
-
-                        <div>
-                            <input type="text" name="nameLast" id="nameLast" placeholder="Doe" class="form-piece-box form-piece-box2" required>
-                        </div>
-                </div>   
-                
-                <div class="email">
-                    <div>
-                        <label for="userEmail" class="form-piece-name">Email Address</label>
-                    </div>
-                    <div>
-                        <input type="userEmail" name="userEmail" id="userEmail" placeholder="janedoe@gmail.com" class="form-piece-box form-piece-box2" required>
+            <form class="contact-form" action="mailto:cte-zander.borrelli@sllboces.org" method="POST" enctype="text/plain">
+                <div class="form-row names">
+                    <div class="form-group">
+                        <label for="nameFirst" class="form-piece-name">First Name</label>
+                        <input type="text" name="nameFirst" id="nameFirst" placeholder="Jane" class="form-piece-box" required>
                     </div>
 
+                    <div class="form-group">
+                        <label for="nameLast" class="form-piece-name">Last Name</label>
+                        <input type="text" name="nameLast" id="nameLast" placeholder="Doe" class="form-piece-box" required>
+                    </div>
                 </div>
 
-                <div class="topic">
-                    <div>
-                        <label for="topic" class="form-piece-name">Select a Topic</label>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="userEmail" class="form-piece-name">Email Address</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="jane.doe@school.edu" class="form-piece-box" required>
                     </div>
+                </div>
 
-                    <div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="topic" class="form-piece-name">Question Topic</label>
                         <select name="topic" id="topic" class="form-piece-box" required>
-                            <option value="False">- Select a Topic -</option>
-                            <option value="placeholder">Zander's Magnificent Placeholder Text (Patent Pending)</option>
-                            <option value="placeholder2">Zander's Magnificent Placeholder Text MKII (Patent also Pending)</option>
-                            <option value="placeholder2">Zander's Magnificent Placeholder Text MKIII (Patent also Pending)</option>
+                            <option value="">— Select a Topic —</option>
+                            <option value="triad">CIA Triad</option>
+                            <option value="authentication">Authentication / AAA</option>
+                            <option value="passwords">Passwords &amp; Hashing</option>
+                            <option value="general">General Question</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="question" class="form-piece-name">
-                    <div>   
-                        <label for="question" class="form-piece-name" required>Your Question or Comment</label>
-                    </div>
-
-                    <div>
-                        <textarea name="bio" id="bio" rows="7" cols="70" placeholder="Type your question here..." class="form-piece-box form-piece-box2"required></textarea><br>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="bio" class="form-piece-name">Your Question or Comment</label>
+                        <textarea name="bio" id="bio" placeholder="Type your question here..." class="form-piece-box" required></textarea>
                     </div>
                 </div>
+
+                <button type="submit" class="form-submit">Send Message ✉️</button>
             </form>
         </section>
     </footer>
