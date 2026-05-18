@@ -528,6 +528,10 @@ header{
 
 /* Password Section */
 
+.passwords {
+    background-color: #ebfaff;
+}
+
 .pass-info {
     max-width: 700px;
     margin-top: 2rem;
@@ -587,7 +591,7 @@ header{
 .pass-info-time {
     max-width: 700px;
     margin-top: 2rem;
-    margin-left: 300px;
+    margin-left: 200px;
     text-align: left;
     z-index: 1;
 }
@@ -1046,16 +1050,19 @@ header{
 /* CONTACT FORM */
 
 .contact {
-    background-color: #071e39;
-    padding: 5rem 2rem 4rem;
+  background-color: #071e39;
+  padding: 4rem 2rem;
+  margin-top: 5rem;
 }
 
 .contact-info {
-    max-width: 700px;
-    margin-top: 2rem;
-    margin-left: 300px;
-    text-align: left;
-    z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contact-sub {
@@ -1080,8 +1087,8 @@ header{
     margin: 0 auto;
     display: grid;
     gap: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 28px;
     padding: 2.5rem;
     box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
@@ -1152,4 +1159,64 @@ textarea.form-piece-box {
     transform: translateY(-2px);
     box-shadow: 0 22px 36px rgba(0, 0, 0, 0.35);
 }
+
+/* footer section*/
+footer {
+    background-color: #071e39;
+}
+
+.footer-sect {
+    display: flex;
+    padding: 1rem;
+    padding-top: 5rem;
+    min-width: 220px;
+    justify-content: space-between;
+    
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.footer-links a {
+    color: #bcbcbc;
+    text-decoration: none;
+}
+
+.footer-head {
+    color: #318eff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-text {
+    color: #8c8c8c9d;
+}
+
+.footer-text-spacing {
+    margin-top: 20px;
+}
+
+.footer-text-dot {
+    color: #8c8c8c9d;
+}
+
+.footer-text-link {
+    text-decoration: none;
+    color: #318eff;
+    font-weight: bold;
+}
+
+
 
