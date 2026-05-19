@@ -1004,6 +1004,8 @@ header{
     border-radius: 10px;
     background-color: #042441;
     padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .stp-methods {
